@@ -1,0 +1,37 @@
+<div class="postsarea_nix">
+
+	{{#each posts}}
+
+		<div class="postwrap_nix">
+
+			<div class="posttop_nix nixclear">{{> postinfo}}</div>
+
+				<article class="article_nix" role="article" itemscope itemtype="http://schema.org/Article">
+
+					<div class="titlewrap_nix"><header role='banner' itemscope itemtype='http://schema.org/WPHeader'>
+							
+					<h1 class="posttitle_nix" itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{{title}}}</a></h1>
+
+					</header></div>
+
+					<div class="postinner_nix" itemprop="articleBody">
+
+						<div class="postbody_nix nixclear">
+
+						{{{content}}}
+
+						</div>
+
+					</div>
+
+				</article>
+
+			<div class="postbottom_nix"></div>
+
+		</div>
+
+	{{/each}}
+
+	{{> pagination}}
+
+</div>
